@@ -1,0 +1,568 @@
+/* Header Styles */
+header {
+  background-color: #007bff;
+  color: #fff;
+  ext-align: center;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  header, footer {
+    padding: 10px;
+  }
+}
+
+/* Header Styles */
+.header {
+    background-color: #DED4E8;
+    color: black;
+    text-align: left;
+
+}
+
+/* Hero Banner Styles */
+.hero-banner {
+    background-image: url('image/hero.png');
+    background-size: cover;
+    height: 100%;
+    background-position: center; /* Center the background image */
+    background-color: white;
+    padding: 200px;
+    margin: 3px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 1s ease-out 1s forwards;
+    box-shadow: 0px 15px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Navigation Styles */
+.navigation-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: blanchedalmond;
+    margin-top: 20px;
+    opacity: 0;
+    transition: color 0.7s ease;
+    animation: fadeInRight 1s ease-out 1s forwards;
+
+}
+
+.navigation-menu a:hover {
+    color:#C7395F; /* Change color on hover */
+}
+
+.logo img {
+    height: 50px;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0.1, 0.1, 0.1, 0.1); /* Add a light shadow to the logo */
+    border-radius: 50%; /* Make the image appear round */
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+}
+
+.menu-list li {
+    margin-right: 20px;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: fadeInRight 1.5s ease-out 1.9s forwards;
+}
+
+.menu-list li:last-child {
+    margin-right: 0;
+}
+
+.menu-list li a {
+    text-decoration: none;
+    color: black;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1); /* Add a light shadow to the logo */
+}
+
+.cta-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #F9B61A;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+    margin: 20px;
+    transition: background-color 1s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out 2s forwards;
+}
+
+.cta-button:hover {
+    background-color: black;
+}
+
+@keyframes fadeInRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px;
+    padding: 20px; /* Increase padding for more spacing */
+    display: flex; /* Align center is now here */
+    flex-direction: column; /* Stacking elements vertically */
+    align-items: center; /* Center horizontally */
+}
+
+.section-title {
+    text-align: center;
+    font-size: 40px; /* Slightly larger font size */
+    margin: 20px 0; /* More spacing around the title */
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.service {
+    background-color: #F3EFEF; /* Lighter background color */
+    padding: 30px; /* Increase padding for more space */
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjusted shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.service img {
+    max-width: 100px; /* Slightly larger image */
+    margin-bottom: 15px; /* More space below the image */
+}
+
+.catchy-tagline {
+    text-align: center;
+    font-size: 20px; /* Slightly larger font size */
+    margin-top: 30px; /* More spacing from services */
+}
+
+
+/* Style for the Why Choose Us section */
+.why-choose {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #DED4E8;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.benefit {
+  margin-bottom: 20px;
+}
+
+.benefit h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.benefit p {
+  font-size: 16px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #F9B61A;
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0.1, 0.1); /* Add a light shadow to the logo */
+}
+
+.cta-button:hover {
+    background-color: black;
+    color: #C7395F;
+}
+
+/* Featured Projects Section */
+.featured-projects {
+  margin: 0px;
+  padding: 60px 0;
+  background-color: #DED4E8;
+    
+}
+
+.container {
+  max-width: 1200px;
+  margin: 10px; /* Center the container horizontally */
+  padding: 10px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333; /* Adjust the text color */
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-item {
+  width: calc(33.33% - 20px);
+  margin-bottom: 30px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 10px; /* Add border radius for the project items */
+}
+
+.project-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.project-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #C7395F; /* Adjust the title color */
+}
+
+.project-description {
+  font-size: 14px;
+  color: black;
+}
+
+
+/* Testimonials Section Styles */
+.testimonials-section {
+    text-align: center;
+    padding: 30px 0;
+    margin: 20px;
+    background-color: #C7395F; /* Set a unique background color for the section */
+    border-radius: 50px; /* Adjust the border radius as desired */
+    box-shadow: 8px 8px 8px 8px rgba(0.1, 0.1, 0.1, 0.1); /* Add a light shadow to the logo */
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    display: inline-block;
+    width: 300px;
+    text-align: left;
+
+}
+
+.client-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial-text {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.client-details {
+    font-size: 14px;
+    color: #888;
+}
+
+
+/* Styles for the CTA section */
+.cta-section {
+    background-color: #f7f7f7;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cta-tagline {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666;
+}
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  margin: 20px;
+}
+
+.about-image img {
+  max-width: 100%;
+  box-shadow: 5px 5px 5px 5px rgba(0.1, 0.1, 0.1, 0.1); /* Add a light shadow to the logo */
+  border-radius: 1%; /* Make the image appear round */
+}
+
+.about-content {
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+
+
+
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  box-shadow: 50px 50px 50px 50px rgba(0.1, 0.1, 0.1, 0.1); /* Add a light shadow to the logo */
+  border-radius: 50%; /* Make the image appear round */
+}
+
+
+
+/* Footer Styles */
+.footer {
+  background-color: #C7395F;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Footer section styling */
+.footer-links,
+.contact-details,
+.our-story,
+.social-media {
+  display: inline-block;
+  max-width: 300px;
+  padding: 20px;
+  margin: 10px;
+  vertical-align: top;
+  text-align: left;
+  gap: 5px;
+}
+
+/* Footer links styling */
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Social media links styling */
+.social-link {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: !important;
+  font-weight: bolder;
+  color: white;
+}
+
+.social-icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 20%;
+  box-shadow: 5px 5px 5px 5px rgba(0.1, 0.1, 0.1, 0.1);
+}
+
+.social-label {
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+
+/* Footer text styling */
+footer {
+  background-color: #C7395F;
+  padding: 5px 0;
+  text-align: center;
+  color: white;
+}
+
+/* Copyright text styling */
+footer p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+
+.trust-badges-section {
+  background-color: #ffffff;
+  padding: 5px 0;
+}
+
+.trust-badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.trust-badge {
+  width: 120px;
+  height: auto;
+}
+
+  .section-divider {
+    text-align: center;
+    margin-top: 2px;
+    background-color: #C7395F;
+  }
+
+  .divider-line {
+    width: 50px;
+    border-top: 2px solid #C7395F;
+    margin: 10px auto;
+}
+
+/* About Us section styles */
+.about-us {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  text-align: center;
+}
+
+.team-image {
+  max-width: 100%;
+  border: 2px solid #333;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.image-caption {
+  color: #777;
+}
+
+.meet-team-title {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.meet-team-text {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Team Members section styles */
+.team-members {
+  padding: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.team-member {
+  text-align: center;
+  flex: 0 0 calc(33.33% - 20px);
+  margin: 10px;
+}
+
+.team-member img {
+  max-width: 100%;
+  border-radius: 50%;
+  border: 2px solid #333;
+}
+
+.team-member h4 {
+  margin: 10px 0;
+}
+
+.team-member p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.social-media-links {
+  margin-top: 10px;
+}
+
+.social-media-links a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* Other Content section styles */
+.other-content {
+  /* Add styles as needed */
+}
+
+/* Add more styles as needed */
